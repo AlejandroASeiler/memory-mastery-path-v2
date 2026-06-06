@@ -14,6 +14,7 @@ Desde conceptos básicos hasta optimización avanzada para sistemas y servicios.
 - **`01_basics_lifecycle.cpp`**: Referencias vs Valores y el ciclo de vida de los objetos.
 - **`02_stl_optimization.cpp`**: Cómo usar `std::vector` correctamente y el poder de los Templates.
 - **`03_advanced_optimization.cpp`**: Alineación de memoria (Padding) y `std::string_view` (C++17).
+- **`04_concurrency_basics.cpp`**: Fundamentos de multithreading, Mutex y Atómicos.
 - **`smart_pointers.cpp`**: RAII y gestión automática de recursos (`unique_ptr`, `shared_ptr`).
 - **`move_semantics.cpp`**: Optimización extrema evitando copias innecesarias mediante "Move Semantics".
 
