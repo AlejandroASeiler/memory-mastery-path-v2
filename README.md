@@ -5,9 +5,10 @@ Este repositorio está diseñado para ayudarte a entender las bases de la progra
 ## 📂 Estructura del Repositorio
 
 ### 1. [C Basics](./c_basics/)
-El fundamento de todo. Aquí aprenderás cómo funciona la memoria "bajo el capó".
+El fundamento de todo. Desde punteros hasta manipulación de bajo nivel.
 - **`pointers_basics.c`**: Direcciones de memoria, aritmética de punteros y manipulación directa.
-- **`dynamic_memory.c`**: Gestión manual con `malloc`, `realloc` y `free`. Crucial para entender fugas de memoria (memory leaks).
+- **`dynamic_memory.c`**: Gestión manual con `malloc`, `realloc` y `free`.
+- **`advanced_c.c`**: Manipulación de bits y Punteros a Funciones (Callbacks).
 
 ### 2. [C++ Mastery](./cpp_mastery/) 🛠️
 Desde conceptos básicos hasta optimización avanzada para sistemas y servicios.
@@ -19,9 +20,10 @@ Desde conceptos básicos hasta optimización avanzada para sistemas y servicios.
 - **`move_semantics.cpp`**: Optimización extrema evitando copias innecesarias mediante "Move Semantics".
 
 ### 3. [Rust Foundations](./rust_foundations/) 🦀
-El futuro de la programación segura.
-- **`ownership.rs`**: El sistema de Ownership y Borrowing que garantiza seguridad sin Garbage Collector.
-- **`unsafe_ptr.rs`**: Cómo bajar al nivel de C en Rust cuando la optimización manual es necesaria.
+El futuro de la programación segura y de alto rendimiento.
+- **`ownership.rs`**: El sistema de Ownership y Borrowing (Básico).
+- **`advanced_rust.rs`**: Traits, Generics y Concurrencia Segura con `Arc` y `Mutex`.
+- **`unsafe_ptr.rs`**: Punteros crudos y bloques `unsafe` para optimización extrema.
 
 ## 🚀 Cómo Empezar
 
