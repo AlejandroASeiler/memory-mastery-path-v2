@@ -1,69 +1,73 @@
-# Mastery of Memory: C, C++, and Rust 🚀
+# 🚀 Mastery Path: C, C++ & Rust
 
-Este repositorio está diseñado para ayudarte a entender las bases de la programación de sistemas, el manejo de memoria y la optimización de servicios. El dominio de estos lenguajes te permitirá crear aplicaciones escalables, SaaS de alto rendimiento y sistemas robustos.
+Bienvenido a la guía definitiva para dominar la programación de sistemas, el manejo de memoria y la optimización de alto rendimiento. Este repositorio está diseñado para llevarte desde los conceptos más básicos de la lógica hasta las técnicas avanzadas utilizadas en la industria para crear SaaS, motores y sistemas escalables.
 
-## 📂 Estructura del Repositorio
+---
 
-### 1. [C Basics](./c_basics/)
-El fundamento de todo. Desde punteros hasta manipulación de bajo nivel.
-- **`pointers_basics.c`**: Direcciones de memoria, aritmética de punteros y manipulación directa.
-- **`dynamic_memory.c`**: Gestión manual con `malloc`, `realloc` y `free`.
-- **`advanced_c.c`**: Manipulación de bits y Punteros a Funciones (Callbacks).
+## 🗺️ Hoja de Ruta de Aprendizaje
 
-### 2. [C++ Mastery](./cpp_mastery/) 🛠️
-Desde conceptos básicos hasta optimización avanzada para sistemas y servicios.
-- **`01_basics_lifecycle.cpp`**: Referencias vs Valores y el ciclo de vida de los objetos.
-- **`02_stl_optimization.cpp`**: Cómo usar `std::vector` correctamente y el poder de los Templates.
-- **`03_advanced_optimization.cpp`**: Alineación de memoria (Padding) y `std::string_view` (C++17).
-- **`04_concurrency_basics.cpp`**: Fundamentos de multithreading, Mutex y Atómicos.
-- **`smart_pointers.cpp`**: RAII y gestión automática de recursos (`unique_ptr`, `shared_ptr`).
-- **`move_semantics.cpp`**: Optimización extrema evitando copias innecesarias mediante "Move Semantics".
+### 🧠 Fase 1: Lógica de Programación (El Motor)
+Antes de tocar la memoria, debes dominar cómo piensa el procesador.
+- **[Basic Logic](./logic_mastery/01_basic_logic.c)**: Tablas de verdad y álgebra booleana.
+- **[Intermediate Flow](./logic_mastery/02_intermediate_logic.cpp)**: Máquinas de estado para lógica compleja.
+- **[Advanced Logic](./logic_mastery/03_advanced_logic.cpp)**: **Branchless Programming** (optimización a nivel de CPU).
+- **[Rust Logic](./logic_mastery/04_rust_logic.rs)**: Pattern Matching exhaustivo y seguridad lógica.
 
-### 3. [Rust Foundations](./rust_foundations/) 🦀
-El futuro de la programación segura y de alto rendimiento.
-- **`ownership.rs`**: El sistema de Ownership y Borrowing (Básico).
-- **`advanced_rust.rs`**: Traits, Generics y Concurrencia Segura con `Arc` y `Mutex`.
-- **`unsafe_ptr.rs`**: Punteros crudos y bloques `unsafe` para optimización extrema.
+### 💾 Fase 2: El Fundamento de C (La Base)
+Entiende cómo funciona la memoria real, sin abstracciones.
+- **[Pointers Basics](./c_basics/pointers_basics.c)**: Direcciones, punteros y aritmética.
+- **[Dynamic Memory](./c_basics/dynamic_memory.c)**: `malloc`, `realloc` y `free` (Gestión manual).
+- **[Advanced C](./c_basics/advanced_c.c)**: Manipulación de bits y punteros a funciones.
 
-### 4. [Logic Mastery](./logic_mastery/) 🧠
-La base de todo algoritmo eficiente.
-- **`01_basic_logic.c`**: Tablas de verdad, Álgebra Booleana y Cortocircuitos.
-- **`02_intermediate_logic.cpp`**: Máquinas de Estado para evitar el "Callback Hell" o ifs anidados.
-- **`03_advanced_logic.cpp`**: **Branchless Programming** (optimización a nivel de CPU) y Lógica en tiempo de compilación.
-- **`04_rust_logic.rs`**: Pattern Matching exhaustivo y lógica funcional.
+### 🛠️ Fase 3: Maestría en C++ (La Optimización)
+Aprende a usar abstracciones de costo cero para crear servicios rápidos.
+- **[Lifecycle & Refs](./cpp_mastery/01_basics_lifecycle.cpp)**: Referencias vs Valores.
+- **[STL & Templates](./cpp_mastery/02_stl_optimization.cpp)**: Optimización de contenedores.
+- **[Advanced Memory](./cpp_mastery/03_advanced_optimization.cpp)**: Alineación de memoria y `string_view`.
+- **[Concurrency](./cpp_mastery/04_concurrency_basics.cpp)**: Multithreading, Mutex y Atómicos.
+- **[Smart Pointers](./cpp_mastery/smart_pointers.cpp)**: RAII y gestión automática.
+- **[Move Semantics](./cpp_mastery/move_semantics.cpp)**: Evitar copias innecesarias.
+
+### 🦀 Fase 4: Rust Foundations (La Seguridad)
+El futuro de los sistemas seguros y de alto rendimiento.
+- **[Ownership](./rust_foundations/ownership.rs)**: El corazón de Rust (Básico).
+- **[Advanced Rust](./rust_foundations/advanced_rust.rs)**: Traits, Generics y Concurrencia segura.
+- **[Unsafe Rust](./rust_foundations/unsafe_ptr.rs)**: Bajando al nivel de C cuando es necesario.
+
+---
 
 ## 🚀 Cómo Empezar
 
 ### Requisitos
-- GCC / Clang (para C y C++)
-- Rustc / Cargo (para Rust)
-- Make (opcional, para automatización)
+- **C/C++**: `gcc` o `clang`.
+- **Rust**: `rustc` y `cargo`.
+- **Build**: `make` instalado.
 
-### Compilación y Ejecución
-
-#### C
+### Compilación Rápida
+Puedes compilar todos los ejemplos de una vez usando el Makefile:
 ```bash
-gcc c_basics/pointers_basics.c -o pointers
-./pointers
+make
 ```
 
-#### C++
+O individualmente:
 ```bash
-g++ -std=c++17 cpp_mastery/smart_pointers.cpp -o smart_ptr
-./smart_ptr
-```
+# Ejemplo C
+gcc c_basics/pointers_basics.c -o pointers && ./pointers
 
-#### Rust
-```bash
-rustc rust_foundations/ownership.rs -o ownership
-./ownership
-```
+# Ejemplo C++
+g++ -std=c++17 cpp_mastery/smart_pointers.cpp -o smart && ./smart
 
-## 💡 Consejos para la Optimización de Servicios
-1. **Evita Allocations en el Hot Path**: En servicios de alta carga, reservar memoria dinámicamente es costoso. Usa pools de memoria o reserva por adelantado.
-2. **Cache Locality**: Organiza tus datos de forma contigua en memoria para aprovechar la caché del CPU.
-3. **Move en lugar de Copy**: En C++, usa `std::move` siempre que el objeto original ya no sea necesario.
-4. **Zero-Cost Abstractions**: Tanto en C++ como en Rust, prefiere abstracciones que no añadan carga en tiempo de ejecución.
+# Ejemplo Rust
+rustc rust_foundations/ownership.rs -o ownership && ./ownership
+```
 
 ---
-*Creado para aprender a construir el futuro de los sistemas de alto rendimiento.*
+
+## 💡 Consejos de Optimización para SaaS/Sistemas
+1. **Data Locality**: Mantén tus datos juntos para que el CPU no tenga que esperar a la RAM.
+2. **Avoid Allocations**: En el "hot path" de tu código, evita pedir memoria. Usa pools o reserva previamente.
+3. **Branchless**: Si una condición es impredecible, intenta eliminarla con lógica matemática.
+4. **Zero-Cost**: Usa abstracciones que el compilador pueda eliminar, no pagues por lo que no usas.
+
+---
+*Creado para construir el futuro de los sistemas de alto rendimiento.*
