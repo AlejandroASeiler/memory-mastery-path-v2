@@ -25,6 +25,13 @@ El futuro de la programación segura y de alto rendimiento.
 - **`advanced_rust.rs`**: Traits, Generics y Concurrencia Segura con `Arc` y `Mutex`.
 - **`unsafe_ptr.rs`**: Punteros crudos y bloques `unsafe` para optimización extrema.
 
+### 4. [Logic Mastery](./logic_mastery/) 🧠
+La base de todo algoritmo eficiente.
+- **`01_basic_logic.c`**: Tablas de verdad, Álgebra Booleana y Cortocircuitos.
+- **`02_intermediate_logic.cpp`**: Máquinas de Estado para evitar el "Callback Hell" o ifs anidados.
+- **`03_advanced_logic.cpp`**: **Branchless Programming** (optimización a nivel de CPU) y Lógica en tiempo de compilación.
+- **`04_rust_logic.rs`**: Pattern Matching exhaustivo y lógica funcional.
+
 ## 🚀 Cómo Empezar
 
 ### Requisitos
